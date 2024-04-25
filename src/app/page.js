@@ -2,7 +2,7 @@
 
 import "./page.css";
 import Link from "next/link";
-import ProgressBar from "./ProgressBar/progressBar";
+import ProgressBar from "./ProgressBar/ProgressBar";
 
 export default function Home() {
   return (
