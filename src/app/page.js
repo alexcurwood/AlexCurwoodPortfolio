@@ -1,5 +1,5 @@
 import "./page.css";
-import { Link } from "react-router";
+import { Link } from "next/link";
 
 export default function Home() {
   return (
