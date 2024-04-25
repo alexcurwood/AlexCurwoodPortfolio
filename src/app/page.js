@@ -2,10 +2,12 @@
 
 import "./page.css";
 import Link from "next/link";
+import ProgressBar from "./ProgressBar/progressBar";
 
 export default function Home() {
   return (
     <>
+      <ProgressBar />
       <div className="Header">
         <h2>Alex Curwood</h2>
         <h1>Aspiring Junior Software Developer</h1>

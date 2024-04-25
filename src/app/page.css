@@ -1,3 +1,14 @@
 .Header{
     margin: 0 auto
 }
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+Link{
+    text-decoration: none;
+    color: white;
+}
