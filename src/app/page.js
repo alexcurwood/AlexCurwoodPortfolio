@@ -2,6 +2,7 @@
 
 import "./page.css";
 import Link from "next/link";
+import Image from "next/image";
 import ProgressBar from "./ProgressBar/ProgressBar";
 
 export default function Home() {
@@ -13,24 +14,95 @@ export default function Home() {
         <h1>Aspiring Junior Software Developer</h1>
       </div>
       <div className="nav">
-        <Link href="#about">About Me</Link>
-        <Link href="#projects">Projects</Link>
-        <Link href="#tech-stack">Tech Stack</Link>
+        <Link
+          href="#about"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            fontWeight: "lighter",
+            border: "solid",
+            borderRadius: "10px",
+            borderWidth: "1px",
+            padding: "5px",
+          }}
+        >
+          About Me
+        </Link>
+        <Link
+          href="#projects"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            fontWeight: "lighter",
+            border: "solid",
+            borderRadius: "10px",
+            borderWidth: "1px",
+            padding: "5px",
+          }}
+        >
+          Projects
+        </Link>
+        <Link
+          href="#tech-stack"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            fontWeight: "lighter",
+            border: "solid",
+            borderRadius: "10px",
+            borderWidth: "1px",
+            padding: "5px",
+          }}
+        >
+          Tech Stack
+        </Link>
       </div>
+
       <div id="about">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus
-          elit, tincidunt vel feugiat in, imperdiet condimentum enim. Morbi non
-          mauris nunc. Vestibulum maximus quam sed nibh feugiat, ullamcorper
-          venenatis risus semper. Phasellus porta ac arcu sit amet finibus.
-          Donec ut tellus nec lorem ullamcorper ultricies. Pellentesque vitae
-          mauris risus. Donec eget dictum felis. Pellentesque augue nibh,
-          hendrerit sit amet elit et, blandit hendrerit diam. Proin molestie mi
-          at rutrum fermentum. Donec sed porta elit. Praesent aliquam imperdiet
-          ultricies.
-        </p>
+        <h2>About Me</h2>
+        <hr></hr>
+        <div id="about-text">
+          <div>
+            <p>
+              I recently graduated from Durham University with a degree in
+              Natural Sciences. My background and degree programme mainly
+              consisted of Physics, Mathematics, and Philosophy, but in my
+              Second Year at University, I had my first exposure to Computer
+              Science and Software Development.
+            </p>
+            <p>
+              Within these disciplines, I found a unique opportunity to
+              capitalise on my natural curiosity, leverage my problem-solving
+              and analytical skills, and work within a collaborative environment
+              to create meaningful solutions for businesses and consumers.
+            </p>
+            <p>
+              After graduating, I enrolled in the School of Code, which has been
+              a fantastic opportunity to develop these skills further in an
+              accelerated learning environment and start building solutions to
+              real-world problems. Please find some examples below.
+            </p>
+          </div>
+          <div className="links">
+            <Link href="https://github.com/alexcurwood">
+              <img src="/github-logo.png" className="logo" id="github"></img>
+            </Link>
+            <Link href="https://www.linkedin.com/in/alex-curwood-6453132b1/">
+              <img src="/linkedin-logo.png" className="logo"></img>
+            </Link>
+            <a href="/SoCCVDraft2.pdf" download>
+              <img
+                src="/download-icon.jpeg"
+                className="logo"
+                id="download"
+              ></img>
+            </a>
+          </div>
+        </div>
       </div>
       <div id="projects">
+        <h2>Projects</h2>
+        <hr></hr>
         <p>
           Vivamus vitae finibus lorem, sit amet commodo mi. In non sapien nec
           metus hendrerit tempus non quis orci. Etiam posuere tempor felis nec
@@ -46,6 +118,8 @@ export default function Home() {
         </p>
       </div>
       <div id="tech-stack">
+        <h2>Tech Stack</h2>
+        <hr></hr>
         <p>
           Mauris sodales in massa a hendrerit. Praesent lobortis ultricies odio,
           gravida tempor orci tincidunt non. Proin fermentum tempor sem. Integer
